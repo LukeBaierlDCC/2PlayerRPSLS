@@ -12,7 +12,7 @@ namespace _2PlayerRPSLS
         {
             Console.WriteLine("Enter your choice (Rock, Paper, Scissors, Lizard, Snake):");
             string input = Console.ReadLine();
-            return (Choice)Enum.Parse(typeof(Choice), input);
+            return (Choice)Enum.Parse(typeof(Choice), input, true);
         }
     }
 }

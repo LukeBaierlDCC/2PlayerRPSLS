@@ -1,0 +1,7 @@
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\bin\Debug\2PlayerRPSLS.exe.config
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\bin\Debug\2PlayerRPSLS.exe
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\bin\Debug\2PlayerRPSLS.pdb
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\obj\Debug\2PlayerRPSLS.csprojAssemblyReference.cache
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\obj\Debug\2PlayerRPSLS.csproj.CoreCompileInputs.cache
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\obj\Debug\2PlayerRPSLS.exe
+E:\All back-up 2022 and beyond\Programs to program\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\2PlayerRPSLS\2PlayerRPSLS\obj\Debug\2PlayerRPSLS.pdb

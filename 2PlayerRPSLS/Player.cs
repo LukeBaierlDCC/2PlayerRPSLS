@@ -12,7 +12,7 @@ namespace _2PlayerRPSLS
         Paper,
         Scissors,
         Lizard,
-        Snake
+        Spock
     }
 
     public abstract class Player
