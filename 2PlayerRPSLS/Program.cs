@@ -14,9 +14,7 @@ namespace _2PlayerRPSLS
             string player1Name = Console.ReadLine();
             Console.WriteLine("Is player 2 a human or AI? (Enter H or A)");
             string player2Type = Console.ReadLine();
-            //Console.WriteLine("Enter player 2 name:");
-            //string player2Name = Console.ReadLine();
-
+            
             Player player1 = new HumanPlayer { Name = player1Name };
             Player player2 = new AIPlayer { Name = player2Type };
 
@@ -53,13 +51,24 @@ namespace _2PlayerRPSLS
                     (player1Choice == Choice.Spock && (player2Choice == Choice.Rock || player2Choice == Choice.Scissors)))
                 {
                     Console.WriteLine("{0} wins!", player1.Name);
+                    player1Wins++;
                 }
                 else
                 {
                     Console.WriteLine("{0} wins!", player2.Name);
+                    player2Wins++;
                 }
 
-                Console.WriteLine();
+                Console.WriteLine("{0} wins!", player2.Name);
+
+                Console.WriteLine("Score: {0} - {1}", player1Wins, player2Wins);
+
+                Console.WriteLine("Press Q to quit or any other key to continue");
+                string exit = Console.ReadLine();
+                if (exit.ToUpper() == "Q")
+                {
+                    break;
+                }
             }
         }
     }
