@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace _2PlayerRPSLS
 {
-    class HumanPlayer
+    public class HumanPlayer
     {
+        //public override Choice GetChoice()
+        //{
+        //    Console.WriteLine("");
+        //    string input = Console.ReadLine();
+        //    return (Choice)Enum.Parse(typeof(Choice), input);
+        //}
     }
 }

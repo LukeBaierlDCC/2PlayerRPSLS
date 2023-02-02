@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace _2PlayerRPSLS
 {
+    public enum Choice
+    {
+        Rock,
+        Paper,
+        Scissors,
+        Lizard,
+        Snake
+    }
+
     public abstract class Player
     {
         public string Name { get; set; }
 
-        //public abstract Choice GetChoice();
+        public abstract Choice GetChoice();
     }
 }

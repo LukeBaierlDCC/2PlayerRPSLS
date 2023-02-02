@@ -10,6 +10,8 @@ namespace _2PlayerRPSLS
     {
         static void Main(string[] args)
         {
+            //Player player1 = new HumanPlayer { Name = "Player 1" };
+
         }
     }
 }

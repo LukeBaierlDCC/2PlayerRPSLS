@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace _2PlayerRPSLS
 {
-    class AIPlayer
+    public class AIPlayer : Player
     {
+        private readonly Random _random = new Random();
+
+        public override Choice GetChoice()
+        {
+            int choice = _random.Next(0, 5);
+            return (Choice)choice;
+        }
     }
 }
