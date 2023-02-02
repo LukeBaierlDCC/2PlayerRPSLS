@@ -38,7 +38,7 @@ namespace _2PlayerRPSLS
             }
             catch (Exception)
             {
-                Console.WriteLine("Invalid choice, please try again.");
+                Console.WriteLine("That wasn't an option. Look, goofball. The options are 'H' or 'A'. \nNow please try again, or I'll really confuse you.");
                 Main(null);
                 return;
             }
