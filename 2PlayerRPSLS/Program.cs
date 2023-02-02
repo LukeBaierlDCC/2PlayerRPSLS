@@ -43,17 +43,6 @@ namespace _2PlayerRPSLS
                 return;
             }
 
-            if (player2Type.ToUpper() == "H")
-            {
-                Console.WriteLine("Enter player 2 name:");
-                string player2Name = Console.ReadLine();
-                player2 = new HumanPlayer { Name = player2Name };
-            }
-            else
-            {
-                player2 = new AIPlayer { Name = "AI Player" };
-            }
-
             int player1Wins = 0;
             int player2Wins = 0;
 
@@ -83,8 +72,6 @@ namespace _2PlayerRPSLS
                     Console.WriteLine("{0} wins!", player2.Name);
                     player2Wins++;
                 }
-
-                Console.WriteLine("{0} wins!", player2.Name);
 
                 Console.WriteLine("Score: {0} - {1}", player1Wins, player2Wins);
 
