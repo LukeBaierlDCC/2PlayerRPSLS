@@ -13,6 +13,15 @@ namespace _2PlayerRPSLS
             Console.WriteLine("Enter your choice (Rock, Paper, Scissors, Lizard, Spock):");
             string input = Console.ReadLine();
             return (Choice)Enum.Parse(typeof(Choice), input, true);
+            try
+            {
+                return (Choice)Enum.Parse(typeof(Choice), input, true);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("That is an invalid option, my friend. \nI literally cannot make this easier for you. \nPlease enter: rock, paper, scissors, lizard, spock.");
+                return GetChoice();
+            }
         }
     }
 }

@@ -18,6 +18,31 @@ namespace _2PlayerRPSLS
             Player player1 = new HumanPlayer { Name = player1Name };
             Player player2 = new AIPlayer { Name = player2Type };
 
+
+            try
+            {
+                if (player2Type.ToUpper() == "H")
+                {
+                    Console.WriteLine("Enter player 2 name:");
+                    string player2Name = Console.ReadLine();
+                    player2 = new HumanPlayer { Name = player2Name };
+                }
+                else if (player2Type.ToUpper() == "A")
+                {
+                    player2 = new AIPlayer { Name = "AI Player" };
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Invalid choice, please try again.");
+                Main(null);
+                return;
+            }
+
             if (player2Type.ToUpper() == "H")
             {
                 Console.WriteLine("Enter player 2 name:");
