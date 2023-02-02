@@ -12,11 +12,27 @@ namespace _2PlayerRPSLS
         {
             Console.WriteLine("Enter player 1 name:");
             string player1Name = Console.ReadLine();
-            Console.WriteLine("Enter player 2 name:");
-            string player2Name = Console.ReadLine();
+            Console.WriteLine("Is player 2 a human or AI? (Enter H or A)");
+            string player2Type = Console.ReadLine();
+            //Console.WriteLine("Enter player 2 name:");
+            //string player2Name = Console.ReadLine();
 
             Player player1 = new HumanPlayer { Name = player1Name };
-            Player player2 = new AIPlayer { Name = player2Name };
+            Player player2 = new AIPlayer { Name = player2Type };
+
+            if (player2Type.ToUpper() == "H")
+            {
+                Console.WriteLine("Enter player 2 name:");
+                string player2Name = Console.ReadLine();
+                player2 = new HumanPlayer { Name = player2Name };
+            }
+            else
+            {
+                player2 = new AIPlayer { Name = "AI Player" };
+            }
+
+            int player1Wins = 0;
+            int player2Wins = 0;
 
             while (true)
             {
