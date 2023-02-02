@@ -10,7 +10,7 @@ namespace _2PlayerRPSLS
     {
         public override Choice GetChoice()
         {
-            Console.WriteLine("Enter your choice (Rock, Paper, Scissors, Lizard, Snake):");
+            Console.WriteLine("Enter your choice (Rock, Paper, Scissors, Lizard, Spock):");
             string input = Console.ReadLine();
             return (Choice)Enum.Parse(typeof(Choice), input, true);
         }

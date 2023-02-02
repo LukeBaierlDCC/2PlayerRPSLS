@@ -10,9 +10,13 @@ namespace _2PlayerRPSLS
     {
         static void Main(string[] args)
         {
-            Player player1 = new HumanPlayer { Name = "Player 1" };
+            Console.WriteLine("Enter player 1 name:");
+            string player1Name = Console.ReadLine();
+            Console.WriteLine("Enter player 2 name:");
+            string player2Name = Console.ReadLine();
 
-            Player player2 = new AIPlayer { Name = "AI Player" };
+            Player player1 = new HumanPlayer { Name = player1Name };
+            Player player2 = new AIPlayer { Name = player2Name };
 
             while (true)
             {
@@ -27,12 +31,12 @@ namespace _2PlayerRPSLS
                     Console.WriteLine("It's a draw!");
                 }
                 else if ((player1Choice == Choice.Rock && (player2Choice == Choice.Scissors || player2Choice == Choice.Lizard)) ||
-                    (player1Choice == Choice.Paper && (player2Choice == Choice.Rock || player2Choice == Choice.Snake)) ||
+                    (player1Choice == Choice.Paper && (player2Choice == Choice.Rock || player2Choice == Choice.Spock)) ||
                     (player1Choice == Choice.Scissors && (player2Choice == Choice.Paper || player2Choice == Choice.Lizard)) ||
-                    (player1Choice == Choice.Lizard && (player2Choice == Choice.Paper || player2Choice == Choice.Snake)) ||
-                    (player1Choice == Choice.Snake && (player2Choice == Choice.Rock || player2Choice == Choice.Scissors)))
+                    (player1Choice == Choice.Lizard && (player2Choice == Choice.Paper || player2Choice == Choice.Spock)) ||
+                    (player1Choice == Choice.Spock && (player2Choice == Choice.Rock || player2Choice == Choice.Scissors)))
                 {
-                    Console.WriteLine("{0 wins!}", player1.Name);
+                    Console.WriteLine("{0} wins!", player1.Name);
                 }
                 else
                 {
