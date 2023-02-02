@@ -73,7 +73,10 @@ namespace _2PlayerRPSLS
                     player2Wins++;
                 }
 
-                Console.WriteLine("Score: {0} - {1}", player1Wins, player2Wins);
+                //Console.WriteLine("Score: {0} - {1}", player1Wins, player2Wins);
+
+                Console.WriteLine("{0}'s score: {1}", player1.Name, player1Wins);
+                Console.WriteLine("{0}'s score: {1}", player2.Name, player2Wins);
 
                 Console.WriteLine("Press Q to quit or any other key to continue");
                 string exit = Console.ReadLine();
@@ -81,6 +84,8 @@ namespace _2PlayerRPSLS
                 {
                     break;
                 }
+
+                Console.Clear();
             }
         }
     }
